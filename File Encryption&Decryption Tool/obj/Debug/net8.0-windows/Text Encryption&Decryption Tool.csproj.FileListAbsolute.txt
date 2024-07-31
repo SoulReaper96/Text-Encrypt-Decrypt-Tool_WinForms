@@ -1,0 +1,17 @@
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\bin\Debug\net8.0-windows\Text Encryption&Decryption Tool.exe
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\bin\Debug\net8.0-windows\Text Encryption&Decryption Tool.deps.json
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\bin\Debug\net8.0-windows\Text Encryption&Decryption Tool.runtimeconfig.json
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\bin\Debug\net8.0-windows\Text Encryption&Decryption Tool.dll
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\bin\Debug\net8.0-windows\Text Encryption&Decryption Tool.pdb
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\File_Encryption_Decryption_Tool.TextEncryptDecryptTool.resources
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\File_Encryption_Decryption_Tool.Properties.Resources.resources
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.csproj.GenerateResource.cache
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.GeneratedMSBuildEditorConfig.editorconfig
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.AssemblyInfoInputs.cache
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.AssemblyInfo.cs
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.csproj.CoreCompileInputs.cache
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.dll
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\refint\Text Encryption&Decryption Tool.dll
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.pdb
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\Text Encryption&Decryption Tool.genruntimeconfig.cache
+G:\Studies\Text Encryption&Decryption Tool\File Encryption&Decryption Tool\obj\Debug\net8.0-windows\ref\Text Encryption&Decryption Tool.dll

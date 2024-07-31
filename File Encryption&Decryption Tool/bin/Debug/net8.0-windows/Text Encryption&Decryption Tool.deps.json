@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Text Encryption&Decryption Tool/1.0.0": {
+        "runtime": {
+          "Text Encryption&Decryption Tool.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Text Encryption&Decryption Tool/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
