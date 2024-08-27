@@ -13,6 +13,8 @@ namespace File_Encryption_Decryption_Tool
 {
     public partial class MainTool_RSA : Form
     {
+        //No key required
+
         private RSACryptoServiceProvider rsa;
 
         public MainTool_RSA()
