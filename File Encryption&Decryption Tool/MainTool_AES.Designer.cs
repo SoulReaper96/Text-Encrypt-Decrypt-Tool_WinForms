@@ -151,8 +151,12 @@
             Controls.Add(EncryptText_lbl);
             Controls.Add(Encrypt_btn);
             Controls.Add(Encrypt_txtBox);
+            Font = new Font("Arial", 9F);
+            ForeColor = Color.Black;
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "TextEncryptDecryptTool";
-            Text = "Text Encrypt and Decrypt Tool";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "MainTool AES";
             ResumeLayout(false);
             PerformLayout();
         }

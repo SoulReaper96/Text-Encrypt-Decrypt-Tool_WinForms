@@ -5,7 +5,7 @@ namespace File_Encryption_Decryption_Tool
 {
     public partial class TextEncryptDecryptTool : Form
     {
-        //Use Thats my Kung Fu as the key
+        //Use "Thats my Kung Fu" as the key
 
         public TextEncryptDecryptTool()
         {
