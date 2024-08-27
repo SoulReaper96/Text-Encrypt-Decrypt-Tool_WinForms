@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Text Encryption&Decryption Tool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f5195e2355928f71608e1119d9b85eba1667af3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Text Encryption&Decryption Tool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Text Encryption&Decryption Tool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
