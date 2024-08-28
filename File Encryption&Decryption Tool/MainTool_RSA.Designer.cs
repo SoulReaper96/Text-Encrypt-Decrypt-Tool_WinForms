@@ -128,7 +128,6 @@
             Return_pb.Size = new Size(25, 25);
             Return_pb.TabIndex = 44;
             Return_pb.TabStop = false;
-            Return_pb.Click += Return_pb_Click;
             // 
             // Close_pb
             // 
@@ -140,7 +139,6 @@
             Close_pb.SizeMode = PictureBoxSizeMode.StretchImage;
             Close_pb.TabIndex = 43;
             Close_pb.TabStop = false;
-            Close_pb.Click += Close_pb_Click;
             // 
             // MainTool_RSA
             // 

@@ -14,8 +14,6 @@ namespace File_Encryption_Decryption_Tool
     public partial class MainTool_TripleDES : Form
     {
         //Use "1234567890That's MyKun-" as the Key
-        private byte[]? tripdesKey;
-        private byte[]? tripdesIV;
 
         public MainTool_TripleDES()
         {
@@ -25,34 +23,27 @@ namespace File_Encryption_Decryption_Tool
         private void Encrypt_btn_Click(object sender, EventArgs e)
         {
             string plainText = Encrypt_txtBox.Text;
+            string key = Key_txtBox.Text;
 
-            if (tripdesKey == null || tripdesIV == null)
-            {
-                MessageBox.Show("Please generate the key and IV first.");
-                return;
-            }
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            byte[] ivBytes = new byte[8]; // Ensure IV is 8 bytes long
+            Array.Copy(keyBytes, ivBytes, Math.Min(keyBytes.Length, ivBytes.Length));
 
-            byte[] encrypted = EncryptStringToBytes_TripleDES(plainText, tripdesKey, tripdesIV);
+            byte[] encrypted = EncryptStringToBytes_TripleDES(plainText, keyBytes, ivBytes);
             Result_rtbBox.Text = Convert.ToBase64String(encrypted);
         }
 
         private void Decrypt_btn_Click(object sender, EventArgs e)
         {
             byte[] cipherText = Convert.FromBase64String(Decrypt_txtBox.Text);
+            string key = Key_txtBox.Text;
 
-            if (tripdesKey == null || tripdesIV == null)
-            {
-                MessageBox.Show("Please generate the key and IV first.");
-                return;
-            }
+            byte[] keyBytes = Encoding.UTF8.GetBytes(key);
+            byte[] ivBytes = new byte[8]; // Ensure IV is 8 bytes long
+            Array.Copy(keyBytes, ivBytes, Math.Min(keyBytes.Length, ivBytes.Length));
 
-            string decrypted = DecryptStringFromBytes_TripleDES(cipherText, tripdesKey, tripdesIV);
+            string decrypted = DecryptStringFromBytes_TripleDES(cipherText, keyBytes, ivBytes);
             Result_rtbBox.Text = decrypted;
-        }
-
-        private void GenerateKey_btn_Click(object sender, EventArgs e)
-        {
-            GenerateTripleDESKey();
         }
 
         static byte[] EncryptStringToBytes_TripleDES(string plainText, byte[] Key, byte[] IV)
@@ -98,33 +89,6 @@ namespace File_Encryption_Decryption_Tool
                     }
                 }
             }
-        }
-
-        private void GenerateTripleDESKey()
-        {
-            using (TripleDESCryptoServiceProvider tripleDesAlg = new TripleDESCryptoServiceProvider())
-            {
-                tripleDesAlg.GenerateKey();
-                tripleDesAlg.GenerateIV();
-
-                tripdesKey = tripleDesAlg.Key;
-                tripdesIV = tripleDesAlg.IV;
-
-                Key_txtBox.Text = Convert.ToBase64String(tripdesKey);
-                IV_txtBox.Text = Convert.ToBase64String(tripdesIV);
-            }
-        }
-
-        private void Return_pb_Click(object sender, EventArgs e)
-        {
-            ToolMainMenu mainMenu = new ToolMainMenu();
-            mainMenu.Show();
-            this.Hide();
-        }
-
-        private void Close_pb_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
