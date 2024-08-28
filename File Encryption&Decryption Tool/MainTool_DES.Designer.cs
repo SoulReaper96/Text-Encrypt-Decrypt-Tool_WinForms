@@ -30,7 +30,6 @@
         {
             Key_lbl = new Label();
             Result_rtbBox = new RichTextBox();
-            Key_txtBox = new TextBox();
             Result_lbl = new Label();
             DecryptText_lbl = new Label();
             Decrypt_txtBox = new TextBox();
@@ -40,6 +39,9 @@
             Encrypt_txtBox = new TextBox();
             Return_pb = new PictureBox();
             Close_pb = new PictureBox();
+            IV_txtBox = new TextBox();
+            GenerateKey_btn = new Button();
+            Key_txtBox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)Return_pb).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Close_pb).BeginInit();
             SuspendLayout();
@@ -62,14 +64,6 @@
             Result_rtbBox.Size = new Size(283, 111);
             Result_rtbBox.TabIndex = 22;
             Result_rtbBox.Text = "";
-            // 
-            // Key_txtBox
-            // 
-            Key_txtBox.Font = new Font("Arial", 9F);
-            Key_txtBox.Location = new Point(123, 45);
-            Key_txtBox.Name = "Key_txtBox";
-            Key_txtBox.Size = new Size(246, 21);
-            Key_txtBox.TabIndex = 21;
             // 
             // Result_lbl
             // 
@@ -148,6 +142,7 @@
             Return_pb.Size = new Size(25, 25);
             Return_pb.TabIndex = 37;
             Return_pb.TabStop = false;
+            Return_pb.Click += Return_pb_Click;
             // 
             // Close_pb
             // 
@@ -159,6 +154,34 @@
             Close_pb.SizeMode = PictureBoxSizeMode.StretchImage;
             Close_pb.TabIndex = 44;
             Close_pb.TabStop = false;
+            Close_pb.Click += Close_pb_Click;
+            // 
+            // IV_txtBox
+            // 
+            IV_txtBox.Font = new Font("Arial", 9F);
+            IV_txtBox.Location = new Point(269, 45);
+            IV_txtBox.Name = "IV_txtBox";
+            IV_txtBox.Size = new Size(140, 21);
+            IV_txtBox.TabIndex = 49;
+            // 
+            // GenerateKey_btn
+            // 
+            GenerateKey_btn.Font = new Font("Arial", 9F);
+            GenerateKey_btn.Location = new Point(162, 9);
+            GenerateKey_btn.Name = "GenerateKey_btn";
+            GenerateKey_btn.Size = new Size(150, 30);
+            GenerateKey_btn.TabIndex = 48;
+            GenerateKey_btn.Text = "GENERATE KEY";
+            GenerateKey_btn.UseVisualStyleBackColor = true;
+            GenerateKey_btn.Click += GenerateKey_btn_Click;
+            // 
+            // Key_txtBox
+            // 
+            Key_txtBox.Font = new Font("Arial", 9F);
+            Key_txtBox.Location = new Point(123, 45);
+            Key_txtBox.Name = "Key_txtBox";
+            Key_txtBox.Size = new Size(140, 21);
+            Key_txtBox.TabIndex = 47;
             // 
             // MainTool_DES
             // 
@@ -166,11 +189,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
             ClientSize = new Size(470, 280);
+            Controls.Add(IV_txtBox);
+            Controls.Add(GenerateKey_btn);
+            Controls.Add(Key_txtBox);
             Controls.Add(Close_pb);
             Controls.Add(Return_pb);
             Controls.Add(Key_lbl);
             Controls.Add(Result_rtbBox);
-            Controls.Add(Key_txtBox);
             Controls.Add(Result_lbl);
             Controls.Add(DecryptText_lbl);
             Controls.Add(Decrypt_txtBox);
@@ -194,7 +219,6 @@
 
         private Label Key_lbl;
         private RichTextBox Result_rtbBox;
-        private TextBox Key_txtBox;
         private Label Result_lbl;
         private Label DecryptText_lbl;
         private TextBox Decrypt_txtBox;
@@ -204,5 +228,8 @@
         private TextBox Encrypt_txtBox;
         private PictureBox Return_pb;
         private PictureBox Close_pb;
+        private TextBox IV_txtBox;
+        private Button GenerateKey_btn;
+        private TextBox Key_txtBox;
     }
 }

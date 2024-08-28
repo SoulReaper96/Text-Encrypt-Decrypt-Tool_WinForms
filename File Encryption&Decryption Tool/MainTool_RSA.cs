@@ -55,5 +55,17 @@ namespace File_Encryption_Decryption_Tool
             byte[] decryptedBytes = rsa.Decrypt(encryptedBytes, false); // false for PKCS#1 v1.5 padding
             return Encoding.UTF8.GetString(decryptedBytes);
         }
+
+        private void Return_pb_Click(object sender, EventArgs e)
+        {
+            ToolMainMenu mainMenu = new ToolMainMenu();
+            mainMenu.Show();
+            this.Hide();
+        }
+
+        private void Close_pb_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

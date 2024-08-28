@@ -14,8 +14,9 @@ namespace File_Encryption_Decryption_Tool
     public partial class MainTool_DES : Form
     {
         //Use "12345678" as the Key
-
-        private DSACryptoServiceProvider _des;
+        private DSACryptoServiceProvider? _des;
+        private byte[]? desKey;
+        private byte[]? desIV;
 
         public MainTool_DES()
         {
@@ -25,19 +26,34 @@ namespace File_Encryption_Decryption_Tool
         private void Encrypt_btn_Click(object sender, EventArgs e)
         {
             string plainText = Encrypt_txtBox.Text;
-            string key = Key_txtBox.Text;
 
-            byte[] encrypted = EncryptStringToBytes_DES(plainText, Encoding.UTF8.GetBytes(key), Encoding.UTF8.GetBytes(key));
+            if (desKey == null || desIV == null)
+            {
+                MessageBox.Show("Please generate the key and IV first.");
+                return;
+            }
+
+            byte[] encrypted = EncryptStringToBytes_DES(plainText, desKey, desIV);
             Result_rtbBox.Text = Convert.ToBase64String(encrypted);
         }
 
         private void Decrypt_btn_Click(object sender, EventArgs e)
         {
             byte[] cipherText = Convert.FromBase64String(Decrypt_txtBox.Text);
-            string key = Key_txtBox.Text;
 
-            string decrypted = DecryptStringFromBytes_DES(cipherText, Encoding.UTF8.GetBytes(key), Encoding.UTF8.GetBytes(key));
+            if (desKey == null || desIV == null)
+            {
+                MessageBox.Show("Please generate the key and IV first.");
+                return;
+            }
+
+            string decrypted = DecryptStringFromBytes_DES(cipherText, desKey, desIV);
             Result_rtbBox.Text = decrypted;
+        }
+
+        private void GenerateKey_btn_Click(object sender, EventArgs e)
+        {
+            GenerateDESKey();
         }
 
         static byte[] EncryptStringToBytes_DES(string plainText, byte[] Key, byte[] IV)
@@ -85,5 +101,31 @@ namespace File_Encryption_Decryption_Tool
             }
         }
 
+        private void GenerateDESKey()
+        {
+            using (DESCryptoServiceProvider desAlg = new DESCryptoServiceProvider())
+            {
+                desAlg.GenerateKey();
+                desAlg.GenerateIV();
+
+                desKey = desAlg.Key;
+                desIV = desAlg.IV;
+
+                Key_txtBox.Text = Convert.ToBase64String(desKey);
+                IV_txtBox.Text = Convert.ToBase64String(desIV);
+            }
+        }
+
+        private void Return_pb_Click(object sender, EventArgs e)
+        {
+            ToolMainMenu mainMenu = new ToolMainMenu();
+            mainMenu.Show();
+            this.Hide();
+        }
+
+        private void Close_pb_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
