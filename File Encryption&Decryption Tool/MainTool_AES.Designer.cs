@@ -40,6 +40,8 @@
             Key_lbl = new Label();
             Return_pb = new PictureBox();
             Close_pb = new PictureBox();
+            GenerateKey_btn = new Button();
+            IV_txtBox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)Return_pb).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Close_pb).BeginInit();
             SuspendLayout();
@@ -107,7 +109,7 @@
             Key_txtBox.Font = new Font("Arial", 9F);
             Key_txtBox.Location = new Point(122, 50);
             Key_txtBox.Name = "Key_txtBox";
-            Key_txtBox.Size = new Size(246, 21);
+            Key_txtBox.Size = new Size(140, 21);
             Key_txtBox.TabIndex = 11;
             // 
             // Result_lbl
@@ -148,6 +150,7 @@
             Return_pb.Size = new Size(25, 25);
             Return_pb.TabIndex = 37;
             Return_pb.TabStop = false;
+            Return_pb.Click += Return_pb_Click;
             // 
             // Close_pb
             // 
@@ -159,6 +162,26 @@
             Close_pb.SizeMode = PictureBoxSizeMode.StretchImage;
             Close_pb.TabIndex = 44;
             Close_pb.TabStop = false;
+            Close_pb.Click += Close_pb_Click;
+            // 
+            // GenerateKey_btn
+            // 
+            GenerateKey_btn.Font = new Font("Arial", 9F);
+            GenerateKey_btn.Location = new Point(161, 14);
+            GenerateKey_btn.Name = "GenerateKey_btn";
+            GenerateKey_btn.Size = new Size(150, 30);
+            GenerateKey_btn.TabIndex = 45;
+            GenerateKey_btn.Text = "GENERATE KEY";
+            GenerateKey_btn.UseVisualStyleBackColor = true;
+            GenerateKey_btn.Click += GenerateKey_btn_Click;
+            // 
+            // IV_txtBox
+            // 
+            IV_txtBox.Font = new Font("Arial", 9F);
+            IV_txtBox.Location = new Point(268, 50);
+            IV_txtBox.Name = "IV_txtBox";
+            IV_txtBox.Size = new Size(140, 21);
+            IV_txtBox.TabIndex = 46;
             // 
             // TextEncryptDecryptTool
             // 
@@ -166,6 +189,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
             ClientSize = new Size(470, 280);
+            Controls.Add(IV_txtBox);
+            Controls.Add(GenerateKey_btn);
             Controls.Add(Close_pb);
             Controls.Add(Return_pb);
             Controls.Add(Key_lbl);
@@ -204,5 +229,7 @@
         private Label Key_lbl;
         private PictureBox Return_pb;
         private PictureBox Close_pb;
+        private Button GenerateKey_btn;
+        private TextBox IV_txtBox;
     }
 }
