@@ -143,7 +143,7 @@
             // 
             Return_pb.BackgroundImage = Properties.Resources.arrow_go_back_line;
             Return_pb.BackgroundImageLayout = ImageLayout.Stretch;
-            Return_pb.Location = new Point(10, 7);
+            Return_pb.Location = new Point(408, 6);
             Return_pb.Name = "Return_pb";
             Return_pb.Size = new Size(25, 25);
             Return_pb.TabIndex = 37;
@@ -153,7 +153,7 @@
             // 
             Close_pb.BackgroundImage = Properties.Resources.close_circle_line__1_;
             Close_pb.BackgroundImageLayout = ImageLayout.Stretch;
-            Close_pb.Location = new Point(433, 7);
+            Close_pb.Location = new Point(439, 6);
             Close_pb.Name = "Close_pb";
             Close_pb.Size = new Size(25, 25);
             Close_pb.SizeMode = PictureBoxSizeMode.StretchImage;

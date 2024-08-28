@@ -45,7 +45,7 @@
             // Result_rtbBox
             // 
             Result_rtbBox.Font = new Font("Arial", 11F);
-            Result_rtbBox.Location = new Point(98, 137);
+            Result_rtbBox.Location = new Point(98, 117);
             Result_rtbBox.Name = "Result_rtbBox";
             Result_rtbBox.Size = new Size(283, 111);
             Result_rtbBox.TabIndex = 42;
@@ -55,7 +55,7 @@
             // 
             Result_lbl.AutoSize = true;
             Result_lbl.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Result_lbl.Location = new Point(34, 139);
+            Result_lbl.Location = new Point(34, 119);
             Result_lbl.Name = "Result_lbl";
             Result_lbl.Size = new Size(58, 19);
             Result_lbl.TabIndex = 40;
@@ -65,7 +65,7 @@
             // 
             DecryptText_lbl.AutoSize = true;
             DecryptText_lbl.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            DecryptText_lbl.Location = new Point(11, 96);
+            DecryptText_lbl.Location = new Point(11, 76);
             DecryptText_lbl.Name = "DecryptText_lbl";
             DecryptText_lbl.Size = new Size(106, 16);
             DecryptText_lbl.TabIndex = 39;
@@ -74,7 +74,7 @@
             // Decrypt_txtBox
             // 
             Decrypt_txtBox.Font = new Font("Arial", 9F);
-            Decrypt_txtBox.Location = new Point(123, 94);
+            Decrypt_txtBox.Location = new Point(123, 74);
             Decrypt_txtBox.Name = "Decrypt_txtBox";
             Decrypt_txtBox.Size = new Size(246, 21);
             Decrypt_txtBox.TabIndex = 38;
@@ -82,7 +82,7 @@
             // Decrypt_btn
             // 
             Decrypt_btn.Font = new Font("Arial", 9F);
-            Decrypt_btn.Location = new Point(375, 93);
+            Decrypt_btn.Location = new Point(375, 73);
             Decrypt_btn.Name = "Decrypt_btn";
             Decrypt_btn.Size = new Size(75, 23);
             Decrypt_btn.TabIndex = 37;
@@ -94,7 +94,7 @@
             // 
             EncryptText_lbl.AutoSize = true;
             EncryptText_lbl.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            EncryptText_lbl.Location = new Point(12, 69);
+            EncryptText_lbl.Location = new Point(12, 49);
             EncryptText_lbl.Name = "EncryptText_lbl";
             EncryptText_lbl.Size = new Size(105, 16);
             EncryptText_lbl.TabIndex = 36;
@@ -103,7 +103,7 @@
             // Encrypt_btn
             // 
             Encrypt_btn.Font = new Font("Arial", 9F);
-            Encrypt_btn.Location = new Point(375, 66);
+            Encrypt_btn.Location = new Point(375, 46);
             Encrypt_btn.Name = "Encrypt_btn";
             Encrypt_btn.Size = new Size(75, 23);
             Encrypt_btn.TabIndex = 35;
@@ -114,7 +114,7 @@
             // Encrypt_txtBox
             // 
             Encrypt_txtBox.Font = new Font("Arial", 9F);
-            Encrypt_txtBox.Location = new Point(123, 67);
+            Encrypt_txtBox.Location = new Point(123, 47);
             Encrypt_txtBox.Name = "Encrypt_txtBox";
             Encrypt_txtBox.Size = new Size(246, 21);
             Encrypt_txtBox.TabIndex = 34;
@@ -123,7 +123,7 @@
             // 
             Return_pb.BackgroundImage = Properties.Resources.arrow_go_back_line;
             Return_pb.BackgroundImageLayout = ImageLayout.Stretch;
-            Return_pb.Location = new Point(9, 7);
+            Return_pb.Location = new Point(408, 6);
             Return_pb.Name = "Return_pb";
             Return_pb.Size = new Size(25, 25);
             Return_pb.TabIndex = 44;
@@ -133,7 +133,7 @@
             // 
             Close_pb.BackgroundImage = Properties.Resources.close_circle_line__1_;
             Close_pb.BackgroundImageLayout = ImageLayout.Stretch;
-            Close_pb.Location = new Point(435, 7);
+            Close_pb.Location = new Point(439, 6);
             Close_pb.Name = "Close_pb";
             Close_pb.Size = new Size(25, 25);
             Close_pb.SizeMode = PictureBoxSizeMode.StretchImage;
