@@ -33,7 +33,7 @@
             DES_btn = new Button();
             TripleDES_btn = new Button();
             label1 = new Label();
-            label2 = new Label();
+            About_lbl = new Label();
             SuspendLayout();
             // 
             // RSA_btn
@@ -112,17 +112,18 @@
             label1.TabIndex = 0;
             label1.Text = "PLEASE SELECT A TOOL BELOW";
             // 
-            // label2
+            // About_lbl
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Arial", 10F, FontStyle.Underline);
-            label2.ForeColor = Color.Gold;
-            label2.Location = new Point(251, 246);
-            label2.Name = "label2";
-            label2.Size = new Size(44, 16);
-            label2.TabIndex = 6;
-            label2.Text = "About";
+            About_lbl.AutoSize = true;
+            About_lbl.BackColor = Color.Transparent;
+            About_lbl.Font = new Font("Arial", 10F, FontStyle.Underline);
+            About_lbl.ForeColor = Color.Gold;
+            About_lbl.Location = new Point(251, 246);
+            About_lbl.Name = "About_lbl";
+            About_lbl.Size = new Size(44, 16);
+            About_lbl.TabIndex = 6;
+            About_lbl.Text = "About";
+            About_lbl.Click += About_lbl_Click;
             // 
             // ToolMainMenu
             // 
@@ -132,7 +133,7 @@
             BackgroundImage = Properties.Resources.istockphoto_913071832_612x612;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(316, 282);
-            Controls.Add(label2);
+            Controls.Add(About_lbl);
             Controls.Add(TripleDES_btn);
             Controls.Add(DES_btn);
             Controls.Add(AES_btn);
@@ -154,6 +155,6 @@
         private Button DES_btn;
         private Button TripleDES_btn;
         private Label label1;
-        private Label label2;
+        private Label About_lbl;
     }
 }

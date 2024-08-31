@@ -61,7 +61,7 @@
             Result_rtbBox.Font = new Font("Arial", 11F);
             Result_rtbBox.Location = new Point(74, 147);
             Result_rtbBox.Name = "Result_rtbBox";
-            Result_rtbBox.Size = new Size(294, 111);
+            Result_rtbBox.Size = new Size(283, 111);
             Result_rtbBox.TabIndex = 32;
             Result_rtbBox.Text = "";
             // 

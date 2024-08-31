@@ -44,5 +44,11 @@ namespace File_Encryption_Decryption_Tool
             tool_TripleDES.Show();
             this.Hide();
         }
+
+        private void About_lbl_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This program was created by Pierre Joubert\n" +
+                "Software version 1.0.0", "About");
+        }
     }
 }
