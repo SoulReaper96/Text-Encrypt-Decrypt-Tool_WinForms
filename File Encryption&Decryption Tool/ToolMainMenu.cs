@@ -50,5 +50,10 @@ namespace File_Encryption_Decryption_Tool
             MessageBox.Show("This program was created by Pierre Joubert\n" +
                 "Software version 1.0.0", "About");
         }
+
+        private void Close_pb_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

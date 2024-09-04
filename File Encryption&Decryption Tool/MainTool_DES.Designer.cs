@@ -50,7 +50,7 @@
             // 
             Key_lbl.AutoSize = true;
             Key_lbl.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            Key_lbl.Location = new Point(12, 47);
+            Key_lbl.Location = new Point(12, 48);
             Key_lbl.Name = "Key_lbl";
             Key_lbl.Size = new Size(101, 16);
             Key_lbl.TabIndex = 23;
@@ -59,7 +59,7 @@
             // Result_rtbBox
             // 
             Result_rtbBox.Font = new Font("Arial", 11F);
-            Result_rtbBox.Location = new Point(76, 143);
+            Result_rtbBox.Location = new Point(76, 147);
             Result_rtbBox.Name = "Result_rtbBox";
             Result_rtbBox.Size = new Size(283, 111);
             Result_rtbBox.TabIndex = 22;
@@ -69,7 +69,7 @@
             // 
             Result_lbl.AutoSize = true;
             Result_lbl.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Result_lbl.Location = new Point(12, 145);
+            Result_lbl.Location = new Point(12, 150);
             Result_lbl.Name = "Result_lbl";
             Result_lbl.Size = new Size(58, 19);
             Result_lbl.TabIndex = 20;
@@ -79,7 +79,7 @@
             // 
             DecryptText_lbl.AutoSize = true;
             DecryptText_lbl.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            DecryptText_lbl.Location = new Point(11, 104);
+            DecryptText_lbl.Location = new Point(11, 105);
             DecryptText_lbl.Name = "DecryptText_lbl";
             DecryptText_lbl.Size = new Size(106, 16);
             DecryptText_lbl.TabIndex = 19;
@@ -88,7 +88,7 @@
             // Decrypt_txtBox
             // 
             Decrypt_txtBox.Font = new Font("Arial", 9F);
-            Decrypt_txtBox.Location = new Point(123, 102);
+            Decrypt_txtBox.Location = new Point(123, 103);
             Decrypt_txtBox.Name = "Decrypt_txtBox";
             Decrypt_txtBox.Size = new Size(246, 21);
             Decrypt_txtBox.TabIndex = 18;
@@ -96,7 +96,7 @@
             // Decrypt_btn
             // 
             Decrypt_btn.Font = new Font("Arial", 9F);
-            Decrypt_btn.Location = new Point(375, 101);
+            Decrypt_btn.Location = new Point(375, 102);
             Decrypt_btn.Name = "Decrypt_btn";
             Decrypt_btn.Size = new Size(75, 23);
             Decrypt_btn.TabIndex = 17;
@@ -108,7 +108,7 @@
             // 
             EncryptText_lbl.AutoSize = true;
             EncryptText_lbl.Font = new Font("Arial", 9.75F, FontStyle.Bold);
-            EncryptText_lbl.Location = new Point(12, 77);
+            EncryptText_lbl.Location = new Point(12, 78);
             EncryptText_lbl.Name = "EncryptText_lbl";
             EncryptText_lbl.Size = new Size(105, 16);
             EncryptText_lbl.TabIndex = 16;
@@ -117,7 +117,7 @@
             // Encrypt_btn
             // 
             Encrypt_btn.Font = new Font("Arial", 9F);
-            Encrypt_btn.Location = new Point(375, 74);
+            Encrypt_btn.Location = new Point(375, 75);
             Encrypt_btn.Name = "Encrypt_btn";
             Encrypt_btn.Size = new Size(75, 23);
             Encrypt_btn.TabIndex = 15;
@@ -128,7 +128,7 @@
             // Encrypt_txtBox
             // 
             Encrypt_txtBox.Font = new Font("Arial", 9F);
-            Encrypt_txtBox.Location = new Point(123, 75);
+            Encrypt_txtBox.Location = new Point(123, 76);
             Encrypt_txtBox.Name = "Encrypt_txtBox";
             Encrypt_txtBox.Size = new Size(246, 21);
             Encrypt_txtBox.TabIndex = 14;
@@ -159,7 +159,7 @@
             // IV_txtBox
             // 
             IV_txtBox.Font = new Font("Arial", 9F);
-            IV_txtBox.Location = new Point(269, 45);
+            IV_txtBox.Location = new Point(269, 46);
             IV_txtBox.Name = "IV_txtBox";
             IV_txtBox.Size = new Size(140, 21);
             IV_txtBox.TabIndex = 49;
@@ -167,7 +167,7 @@
             // GenerateKey_btn
             // 
             GenerateKey_btn.Font = new Font("Arial", 9F);
-            GenerateKey_btn.Location = new Point(162, 9);
+            GenerateKey_btn.Location = new Point(162, 10);
             GenerateKey_btn.Name = "GenerateKey_btn";
             GenerateKey_btn.Size = new Size(150, 30);
             GenerateKey_btn.TabIndex = 48;
@@ -178,7 +178,7 @@
             // Key_txtBox
             // 
             Key_txtBox.Font = new Font("Arial", 9F);
-            Key_txtBox.Location = new Point(123, 45);
+            Key_txtBox.Location = new Point(123, 46);
             Key_txtBox.Name = "Key_txtBox";
             Key_txtBox.Size = new Size(140, 21);
             Key_txtBox.TabIndex = 47;

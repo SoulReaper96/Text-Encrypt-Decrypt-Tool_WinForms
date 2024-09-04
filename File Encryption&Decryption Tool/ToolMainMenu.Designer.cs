@@ -34,6 +34,8 @@
             TripleDES_btn = new Button();
             label1 = new Label();
             About_lbl = new Label();
+            Close_pb = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)Close_pb).BeginInit();
             SuspendLayout();
             // 
             // RSA_btn
@@ -106,7 +108,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Arial", 14F, FontStyle.Underline);
             label1.ForeColor = Color.Gold;
-            label1.Location = new Point(0, 17);
+            label1.Location = new Point(0, 37);
             label1.Name = "label1";
             label1.Size = new Size(316, 22);
             label1.TabIndex = 0;
@@ -125,6 +127,19 @@
             About_lbl.Text = "About";
             About_lbl.Click += About_lbl_Click;
             // 
+            // Close_pb
+            // 
+            Close_pb.BackColor = Color.Transparent;
+            Close_pb.BackgroundImage = Properties.Resources.close_circle_line__1_;
+            Close_pb.BackgroundImageLayout = ImageLayout.Stretch;
+            Close_pb.Location = new Point(279, 9);
+            Close_pb.Name = "Close_pb";
+            Close_pb.Size = new Size(25, 25);
+            Close_pb.SizeMode = PictureBoxSizeMode.StretchImage;
+            Close_pb.TabIndex = 45;
+            Close_pb.TabStop = false;
+            Close_pb.Click += Close_pb_Click;
+            // 
             // ToolMainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -133,6 +148,7 @@
             BackgroundImage = Properties.Resources.istockphoto_913071832_612x612;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(316, 282);
+            Controls.Add(Close_pb);
             Controls.Add(About_lbl);
             Controls.Add(TripleDES_btn);
             Controls.Add(DES_btn);
@@ -141,10 +157,11 @@
             Controls.Add(label1);
             Font = new Font("Arial", 9F);
             ForeColor = Color.Black;
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "ToolMainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ToolMainMenu";
+            ((System.ComponentModel.ISupportInitialize)Close_pb).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -156,5 +173,6 @@
         private Button TripleDES_btn;
         private Label label1;
         private Label About_lbl;
+        private PictureBox Close_pb;
     }
 }

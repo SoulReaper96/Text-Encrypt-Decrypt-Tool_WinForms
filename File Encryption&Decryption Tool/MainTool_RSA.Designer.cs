@@ -147,7 +147,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Bisque;
-            ClientSize = new Size(470, 238);
+            ClientSize = new Size(470, 240);
             Controls.Add(Return_pb);
             Controls.Add(Close_pb);
             Controls.Add(Result_rtbBox);
